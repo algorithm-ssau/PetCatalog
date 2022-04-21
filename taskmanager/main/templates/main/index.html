@@ -1,0 +1,53 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+     <h1>Товары в наличии:</h1>
+     {% if tasks %}
+         {% for el in tasks %}
+              <div>
+                  <h3>{{ el.title }}</h3>
+              </div>
+         {% endfor %}
+     {% else %}
+<p>У нас нет товаров на данный момент</p>
+
+{% endif %}
+
+ <p>Так же всегда присутствуют: </p>
+<div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Британский кот</strong>
+          <p class="mb-auto">Британская порода кошек – идеальный выбор для трудоголиков. Кошки сдержанны в проявлении чувств, но и не имеют ничего против активных игр.</p>
+          <a href="#" class="stretched-link">Продолжение</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect>
+              <text x="50%" y="50%" fill="#FF00FF" dy=".3em"></text></svg>
+
+        </div>
+      </div>
+    </div>
+
+<div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Сибирский хаски</strong>
+          <p class="mb-auto">Сибирский хаски – одна из древнейших пород собак, на протяжении многих веков верой и правдой служащая человеку.</p>
+          <a href="#" class="stretched-link">Продолжение</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect>
+              <text x="50%" y="50%" fill="#FF00FF" dy=".3em"></text></svg>
+
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
