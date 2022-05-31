@@ -2,12 +2,12 @@ ____Каталог домашних животных
 
 Данный сайт предназначен для предоставления информации о всем необходимом для ухода за домашними питомцами.
 Над проектом работали:
-> [https://github.com/6315-drozdova]
-> [https://github.com/Egor6315] 
-> [https://github.com/6315-anurova]
+> [Мария Дроздова](https://github.com/6315-drozdova)
+> [Егор Лысенко](https://github.com/Egor6315)
+> [Юля Анурова](https://github.com/Egor6315)
 
 # Инсткурция по запуску
-- Скачайте и установите последнюю версию Python: [https://www.python.org/getit/windows/](Ресурс)
+- Скачайте и установите последнюю версию Python: [Официальный ресурс](https://www.python.org/getit/windows/)
 - Так же вам понадобится фреймворк django, который устанавливается с помощью команды: `python -m pip install Django`
 - Совершить переход в корневую папку проекста с помощью команды: `cd taskmanager`
 - Запустить сервер: `python manage.py runserver`
