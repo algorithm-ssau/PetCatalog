@@ -6,7 +6,7 @@
 > - [Юля Анурова](https://github.com/6315-anurova)
 
 # Инструкция по запуску
-- Скачайте и установите последнюю версию Python: [Официальный ресурс](https://www.python.org/getit/windows/)
+- Скачать и установить последнюю версию Python: [Официальный ресурс](https://www.python.org/getit/windows/)
 - Так же вам понадобится фреймворк django, который устанавливается с помощью команды: `python -m pip install Django`
 - Совершить переход в корневую папку проекста с помощью команды: `cd taskmanager`
 - Запустить сервер: `python manage.py runserver`
