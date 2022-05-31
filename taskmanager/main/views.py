@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Task
-from .forms import  TaskForm
+from .forms import TaskForm
+
 
 def index(request):
     tasks = Task.objects.all()
@@ -9,6 +10,10 @@ def index(request):
 
 def about(request):
     return render(request, 'main/about.html')
+
+
+def cat_page(request):
+    return render(request, 'main/cat_page.html')
 
 
 def create(request):
