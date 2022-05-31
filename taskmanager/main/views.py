@@ -15,6 +15,8 @@ def about(request):
 def cat_page(request):
     return render(request, 'main/cat_page.html')
 
+def dog_page(request):
+    return render(request, 'main/dog_page.html')
 
 def create(request):
     error = ''
