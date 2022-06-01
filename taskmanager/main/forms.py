@@ -1,12 +1,17 @@
-from .models import Task
-from django.forms import ModelForm, TextInput
+from .models import Tasker
+from django.forms import ModelForm, TextInput, Textarea
 
 class TaskForm(ModelForm):
     class Meta:
-        model = Task
-        fields = ["title"]
-        widgets = {"title": TextInput(attrs={
+        model = Tasker
+        fields = ["title", "task"]
+        widgets = {
+            "title": TextInput(attrs={
             'class': 'form-control',
             'placeholder': 'Введите название'
-            })
+            }),
+            "task": Textarea(attrs={
+                'class': 'form-control',
+                'placeholder': 'Введите описание'
+            }),
         }

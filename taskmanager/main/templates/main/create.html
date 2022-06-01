@@ -7,9 +7,10 @@ Cоздать задачу
 {% block content %}
      <h1>Добавить товар</h1>
      <form method="post">
-          {% csrf_token %}<br>
-          {{ form.title }}<br>
+          {% csrf_token %}
+          {{ form.title}}<br>
+          {{ form.task}}<br>
           <button type="submit" class="btn btn-success">Добавить</button>
-          <span>{{error}}</span>
+          <span>{{ error }}</span>
      </form>
 {% endblock %}
